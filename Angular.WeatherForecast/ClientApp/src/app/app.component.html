@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <table>
+    <thead>
+    <tr>
+      <th>Date</th>
+      <th>Temperature</th>
+      <th>Summary</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let forecast of weatherForecasts">
+        <td>{{forecast.dateFormatted}}</td>
+        <td>{{forecast.temperatureC}}</td>
+        <td>{{forecast.summary}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
