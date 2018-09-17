@@ -5,7 +5,6 @@ export class WeatherForecast implements IWeatherForecast {
   temperatureF: number;
 }
 
-
 export interface IWeatherForecast {
   dateFormatted: string;
   temperatureC: number;

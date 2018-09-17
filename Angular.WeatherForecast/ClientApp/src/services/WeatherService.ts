@@ -13,10 +13,11 @@ export class WeatherService {
 
   getWeatherForecast(): Observable<IWeatherForecast[]> {
 
-    // We'll play around more with Observables in a future update
-    return this.http.get<IWeatherForecast[]>(this.weatherurl);
+    // We'll play around more with Observables in a future update 
+    let observableReturn = this.http.get<IWeatherForecast[]>(this.weatherurl);
+    observableReturn.subscribe(s => console.log(s))
+
+    return observableReturn;
   }
 
 }
-
- 
